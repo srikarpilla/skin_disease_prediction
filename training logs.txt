@@ -1,0 +1,365 @@
+Epoch 1: val_accuracy improved from -inf to 0.04848, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 497s 886ms/step - accuracy: 0.0540 - loss: 4.3746 - top3_acc: 0.1579 - top5_acc: 0.2478 - val_accuracy: 0.0485 - val_loss: 3.2384 - val_top3_acc: 0.2211 - val_top5_acc: 0.3376 - learning_rate: 2.0000e-04
+Epoch 2/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 497ms/step - accuracy: 0.0737 - loss: 3.7207 - top3_acc: 0.1988 - top5_acc: 0.3025
+Epoch 2: val_accuracy improved from 0.04848 to 0.11544, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 261s 536ms/step - accuracy: 0.0737 - loss: 3.7206 - top3_acc: 0.1988 - top5_acc: 0.3025 - val_accuracy: 0.1154 - val_loss: 3.1041 - val_top3_acc: 0.2796 - val_top5_acc: 0.3851 - learning_rate: 2.0000e-04
+Epoch 3/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 499ms/step - accuracy: 0.0875 - loss: 3.5042 - top3_acc: 0.2333 - top5_acc: 0.3420
+Epoch 3: val_accuracy improved from 0.11544 to 0.12419, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 262s 538ms/step - accuracy: 0.0875 - loss: 3.5042 - top3_acc: 0.2333 - top5_acc: 0.3420 - val_accuracy: 0.1242 - val_loss: 3.0539 - val_top3_acc: 0.2951 - val_top5_acc: 0.4300 - learning_rate: 2.0000e-04
+Epoch 4/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 480ms/step - accuracy: 0.1034 - loss: 3.4308 - top3_acc: 0.2564 - top5_acc: 0.3715
+Epoch 4: val_accuracy did not improve from 0.12419
+487/487 ━━━━━━━━━━━━━━━━━━━━ 251s 515ms/step - accuracy: 0.1034 - loss: 3.4307 - top3_acc: 0.2564 - top5_acc: 0.3715 - val_accuracy: 0.1239 - val_loss: 3.1251 - val_top3_acc: 0.2844 - val_top5_acc: 0.4005 - learning_rate: 2.0000e-04
+Epoch 5/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 478ms/step - accuracy: 0.1110 - loss: 3.3412 - top3_acc: 0.2794 - top5_acc: 0.4015
+Epoch 5: val_accuracy improved from 0.12419 to 0.16592, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 251s 516ms/step - accuracy: 0.1110 - loss: 3.3411 - top3_acc: 0.2794 - top5_acc: 0.4015 - val_accuracy: 0.1659 - val_loss: 2.9298 - val_top3_acc: 0.3661 - val_top5_acc: 0.5005 - learning_rate: 2.0000e-04
+Epoch 6/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 483ms/step - accuracy: 0.1459 - loss: 3.2612 - top3_acc: 0.3196 - top5_acc: 0.4431
+Epoch 6: val_accuracy improved from 0.16592 to 0.18341, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 254s 521ms/step - accuracy: 0.1459 - loss: 3.2612 - top3_acc: 0.3196 - top5_acc: 0.4431 - val_accuracy: 0.1834 - val_loss: 2.8687 - val_top3_acc: 0.3843 - val_top5_acc: 0.5302 - learning_rate: 2.0000e-04
+Epoch 7/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 472ms/step - accuracy: 0.1551 - loss: 3.2126 - top3_acc: 0.3435 - top5_acc: 0.4702
+Epoch 7: val_accuracy did not improve from 0.18341
+487/487 ━━━━━━━━━━━━━━━━━━━━ 248s 510ms/step - accuracy: 0.1551 - loss: 3.2125 - top3_acc: 0.3435 - top5_acc: 0.4702 - val_accuracy: 0.1834 - val_loss: 2.9074 - val_top3_acc: 0.3738 - val_top5_acc: 0.5265 - learning_rate: 2.0000e-04
+Epoch 8/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 485ms/step - accuracy: 0.1683 - loss: 3.1304 - top3_acc: 0.3599 - top5_acc: 0.4907
+Epoch 8: val_accuracy did not improve from 0.18341
+487/487 ━━━━━━━━━━━━━━━━━━━━ 254s 522ms/step - accuracy: 0.1683 - loss: 3.1304 - top3_acc: 0.3599 - top5_acc: 0.4907 - val_accuracy: 0.1119 - val_loss: 3.0931 - val_top3_acc: 0.2254 - val_top5_acc: 0.3356 - learning_rate: 2.0000e-04
+Epoch 9/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 484ms/step - accuracy: 0.1824 - loss: 3.0879 - top3_acc: 0.3852 - top5_acc: 0.5074
+Epoch 9: val_accuracy improved from 0.18341 to 0.19065, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 254s 522ms/step - accuracy: 0.1824 - loss: 3.0879 - top3_acc: 0.3852 - top5_acc: 0.5074 - val_accuracy: 0.1907 - val_loss: 2.8501 - val_top3_acc: 0.4098 - val_top5_acc: 0.5477 - learning_rate: 2.0000e-04
+Epoch 10/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 484ms/step - accuracy: 0.1895 - loss: 3.0598 - top3_acc: 0.3903 - top5_acc: 0.5145
+Epoch 10: val_accuracy improved from 0.19065 to 0.23213, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 255s 523ms/step - accuracy: 0.1895 - loss: 3.0598 - top3_acc: 0.3903 - top5_acc: 0.5145 - val_accuracy: 0.2321 - val_loss: 2.7650 - val_top3_acc: 0.4400 - val_top5_acc: 0.5682 - learning_rate: 2.0000e-04
+Epoch 11/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 509ms/step - accuracy: 0.2026 - loss: 3.0149 - top3_acc: 0.4084 - top5_acc: 0.5441
+Epoch 11: val_accuracy did not improve from 0.23213
+487/487 ━━━━━━━━━━━━━━━━━━━━ 266s 546ms/step - accuracy: 0.2026 - loss: 3.0149 - top3_acc: 0.4084 - top5_acc: 0.5441 - val_accuracy: 0.2021 - val_loss: 2.8031 - val_top3_acc: 0.4058 - val_top5_acc: 0.5380 - learning_rate: 2.0000e-04
+Epoch 12/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 502ms/step - accuracy: 0.2155 - loss: 2.9858 - top3_acc: 0.4262 - top5_acc: 0.5531
+Epoch 12: val_accuracy did not improve from 0.23213
+487/487 ━━━━━━━━━━━━━━━━━━━━ 262s 537ms/step - accuracy: 0.2155 - loss: 2.9857 - top3_acc: 0.4262 - top5_acc: 0.5531 - val_accuracy: 0.2309 - val_loss: 2.7597 - val_top3_acc: 0.4538 - val_top5_acc: 0.5882 - learning_rate: 2.0000e-04
+Epoch 13/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 490ms/step - accuracy: 0.2302 - loss: 2.8852 - top3_acc: 0.4450 - top5_acc: 0.5785
+Epoch 13: val_accuracy improved from 0.23213 to 0.25212, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 258s 529ms/step - accuracy: 0.2302 - loss: 2.8853 - top3_acc: 0.4450 - top5_acc: 0.5785 - val_accuracy: 0.2521 - val_loss: 2.6770 - val_top3_acc: 0.4808 - val_top5_acc: 0.6167 - learning_rate: 2.0000e-04
+Epoch 14/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 490ms/step - accuracy: 0.2387 - loss: 2.8853 - top3_acc: 0.4490 - top5_acc: 0.5803
+Epoch 14: val_accuracy did not improve from 0.25212
+487/487 ━━━━━━━━━━━━━━━━━━━━ 256s 526ms/step - accuracy: 0.2387 - loss: 2.8853 - top3_acc: 0.4490 - top5_acc: 0.5803 - val_accuracy: 0.2286 - val_loss: 2.8109 - val_top3_acc: 0.4370 - val_top5_acc: 0.5635 - learning_rate: 2.0000e-04
+Epoch 15/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 490ms/step - accuracy: 0.2503 - loss: 2.8234 - top3_acc: 0.4623 - top5_acc: 0.5952
+Epoch 15: val_accuracy did not improve from 0.25212
+487/487 ━━━━━━━━━━━━━━━━━━━━ 256s 526ms/step - accuracy: 0.2503 - loss: 2.8234 - top3_acc: 0.4624 - top5_acc: 0.5952 - val_accuracy: 0.2246 - val_loss: 2.7795 - val_top3_acc: 0.4460 - val_top5_acc: 0.5735 - learning_rate: 2.0000e-04
+Epoch 16/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 491ms/step - accuracy: 0.2627 - loss: 2.7769 - top3_acc: 0.4906 - top5_acc: 0.6205
+Epoch 16: val_accuracy did not improve from 0.25212
+
+Epoch 16: ReduceLROnPlateau reducing learning rate to 5.999999848427251e-05.
+487/487 ━━━━━━━━━━━━━━━━━━━━ 257s 528ms/step - accuracy: 0.2627 - loss: 2.7770 - top3_acc: 0.4906 - top5_acc: 0.6204 - val_accuracy: 0.2409 - val_loss: 2.7932 - val_top3_acc: 0.4710 - val_top5_acc: 0.6054 - learning_rate: 2.0000e-04
+Epoch 17/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 495ms/step - accuracy: 0.2792 - loss: 2.7153 - top3_acc: 0.5110 - top5_acc: 0.6330
+Epoch 17: val_accuracy improved from 0.25212 to 0.33608, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 260s 534ms/step - accuracy: 0.2792 - loss: 2.7153 - top3_acc: 0.5110 - top5_acc: 0.6330 - val_accuracy: 0.3361 - val_loss: 2.4596 - val_top3_acc: 0.5637 - val_top5_acc: 0.6962 - learning_rate: 6.0000e-05
+Epoch 18/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 493ms/step - accuracy: 0.2848 - loss: 2.6795 - top3_acc: 0.5126 - top5_acc: 0.6388
+Epoch 18: val_accuracy did not improve from 0.33608
+487/487 ━━━━━━━━━━━━━━━━━━━━ 258s 529ms/step - accuracy: 0.2848 - loss: 2.6794 - top3_acc: 0.5126 - top5_acc: 0.6388 - val_accuracy: 0.3086 - val_loss: 2.5311 - val_top3_acc: 0.5397 - val_top5_acc: 0.6712 - learning_rate: 6.0000e-05
+Epoch 19/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 486ms/step - accuracy: 0.2980 - loss: 2.6270 - top3_acc: 0.5273 - top5_acc: 0.6555
+Epoch 19: val_accuracy improved from 0.33608 to 0.35307, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 255s 524ms/step - accuracy: 0.2980 - loss: 2.6270 - top3_acc: 0.5273 - top5_acc: 0.6555 - val_accuracy: 0.3531 - val_loss: 2.4421 - val_top3_acc: 0.5782 - val_top5_acc: 0.6914 - learning_rate: 6.0000e-05
+Epoch 20/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 488ms/step - accuracy: 0.3010 - loss: 2.5916 - top3_acc: 0.5382 - top5_acc: 0.6625
+Epoch 20: val_accuracy improved from 0.35307 to 0.35432, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 256s 525ms/step - accuracy: 0.3010 - loss: 2.5917 - top3_acc: 0.5382 - top5_acc: 0.6625 - val_accuracy: 0.3543 - val_loss: 2.4166 - val_top3_acc: 0.5900 - val_top5_acc: 0.7091 - learning_rate: 6.0000e-05
+Epoch 21/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 490ms/step - accuracy: 0.3098 - loss: 2.5748 - top3_acc: 0.5423 - top5_acc: 0.6741
+Epoch 21: val_accuracy improved from 0.35432 to 0.35957, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 258s 529ms/step - accuracy: 0.3098 - loss: 2.5748 - top3_acc: 0.5423 - top5_acc: 0.6741 - val_accuracy: 0.3596 - val_loss: 2.4126 - val_top3_acc: 0.5902 - val_top5_acc: 0.7094 - learning_rate: 6.0000e-05
+Epoch 22/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 504ms/step - accuracy: 0.3148 - loss: 2.5448 - top3_acc: 0.5435 - top5_acc: 0.6770
+Epoch 22: val_accuracy did not improve from 0.35957
+487/487 ━━━━━━━━━━━━━━━━━━━━ 263s 540ms/step - accuracy: 0.3148 - loss: 2.5448 - top3_acc: 0.5435 - top5_acc: 0.6770 - val_accuracy: 0.3456 - val_loss: 2.4511 - val_top3_acc: 0.5780 - val_top5_acc: 0.7049 - learning_rate: 6.0000e-05
+Epoch 23/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 497ms/step - accuracy: 0.3221 - loss: 2.5322 - top3_acc: 0.5617 - top5_acc: 0.6873
+Epoch 23: val_accuracy did not improve from 0.35957
+487/487 ━━━━━━━━━━━━━━━━━━━━ 259s 533ms/step - accuracy: 0.3221 - loss: 2.5322 - top3_acc: 0.5617 - top5_acc: 0.6873 - val_accuracy: 0.3323 - val_loss: 2.5087 - val_top3_acc: 0.5715 - val_top5_acc: 0.6984 - learning_rate: 6.0000e-05
+Epoch 24/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 503ms/step - accuracy: 0.3185 - loss: 2.5133 - top3_acc: 0.5636 - top5_acc: 0.6919
+Epoch 24: val_accuracy improved from 0.35957 to 0.35982, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 263s 541ms/step - accuracy: 0.3186 - loss: 2.5133 - top3_acc: 0.5636 - top5_acc: 0.6919 - val_accuracy: 0.3598 - val_loss: 2.4092 - val_top3_acc: 0.5917 - val_top5_acc: 0.7149 - learning_rate: 6.0000e-05
+Epoch 25/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 502ms/step - accuracy: 0.3329 - loss: 2.4849 - top3_acc: 0.5788 - top5_acc: 0.7010
+Epoch 25: val_accuracy improved from 0.35982 to 0.36832, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 264s 541ms/step - accuracy: 0.3329 - loss: 2.4849 - top3_acc: 0.5788 - top5_acc: 0.7010 - val_accuracy: 0.3683 - val_loss: 2.3781 - val_top3_acc: 0.6084 - val_top5_acc: 0.7279 - learning_rate: 6.0000e-05
+Epoch 26/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 499ms/step - accuracy: 0.3461 - loss: 2.4693 - top3_acc: 0.5822 - top5_acc: 0.7042
+Epoch 26: val_accuracy did not improve from 0.36832
+487/487 ━━━━━━━━━━━━━━━━━━━━ 265s 543ms/step - accuracy: 0.3461 - loss: 2.4693 - top3_acc: 0.5822 - top5_acc: 0.7041 - val_accuracy: 0.3651 - val_loss: 2.3894 - val_top3_acc: 0.6007 - val_top5_acc: 0.7249 - learning_rate: 6.0000e-05
+Epoch 27/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 504ms/step - accuracy: 0.3436 - loss: 2.4679 - top3_acc: 0.5864 - top5_acc: 0.7067
+Epoch 27: val_accuracy improved from 0.36832 to 0.38431, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 264s 543ms/step - accuracy: 0.3436 - loss: 2.4678 - top3_acc: 0.5864 - top5_acc: 0.7067 - val_accuracy: 0.3843 - val_loss: 2.3611 - val_top3_acc: 0.6119 - val_top5_acc: 0.7274 - learning_rate: 6.0000e-05
+Epoch 28/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 498ms/step - accuracy: 0.3566 - loss: 2.4368 - top3_acc: 0.5982 - top5_acc: 0.7206
+Epoch 28: val_accuracy did not improve from 0.38431
+487/487 ━━━━━━━━━━━━━━━━━━━━ 261s 535ms/step - accuracy: 0.3566 - loss: 2.4368 - top3_acc: 0.5982 - top5_acc: 0.7206 - val_accuracy: 0.3698 - val_loss: 2.4064 - val_top3_acc: 0.6017 - val_top5_acc: 0.7221 - learning_rate: 6.0000e-05
+Epoch 29/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 495ms/step - accuracy: 0.3568 - loss: 2.4271 - top3_acc: 0.6034 - top5_acc: 0.7220
+Epoch 29: val_accuracy did not improve from 0.38431
+487/487 ━━━━━━━━━━━━━━━━━━━━ 260s 533ms/step - accuracy: 0.3568 - loss: 2.4271 - top3_acc: 0.6034 - top5_acc: 0.7220 - val_accuracy: 0.3793 - val_loss: 2.3715 - val_top3_acc: 0.6179 - val_top5_acc: 0.7306 - learning_rate: 6.0000e-05
+Epoch 30/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 496ms/step - accuracy: 0.3741 - loss: 2.3965 - top3_acc: 0.6083 - top5_acc: 0.7272
+Epoch 30: val_accuracy did not improve from 0.38431
+
+Epoch 30: ReduceLROnPlateau reducing learning rate to 1.7999999545281754e-05.
+487/487 ━━━━━━━━━━━━━━━━━━━━ 260s 534ms/step - accuracy: 0.3741 - loss: 2.3965 - top3_acc: 0.6083 - top5_acc: 0.7272 - val_accuracy: 0.3736 - val_loss: 2.3708 - val_top3_acc: 0.6147 - val_top5_acc: 0.7316 - learning_rate: 6.0000e-05
+Epoch 31/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 511ms/step - accuracy: 0.3668 - loss: 2.3865 - top3_acc: 0.6045 - top5_acc: 0.7332
+Epoch 31: val_accuracy improved from 0.38431 to 0.38756, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 268s 549ms/step - accuracy: 0.3668 - loss: 2.3865 - top3_acc: 0.6045 - top5_acc: 0.7332 - val_accuracy: 0.3876 - val_loss: 2.3256 - val_top3_acc: 0.6312 - val_top5_acc: 0.7364 - learning_rate: 1.8000e-05
+Epoch 32/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 515ms/step - accuracy: 0.3910 - loss: 2.3338 - top3_acc: 0.6287 - top5_acc: 0.7472
+Epoch 32: val_accuracy did not improve from 0.38756
+487/487 ━━━━━━━━━━━━━━━━━━━━ 269s 552ms/step - accuracy: 0.3910 - loss: 2.3338 - top3_acc: 0.6287 - top5_acc: 0.7472 - val_accuracy: 0.3851 - val_loss: 2.3610 - val_top3_acc: 0.6224 - val_top5_acc: 0.7349 - learning_rate: 1.8000e-05
+Epoch 33/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 512ms/step - accuracy: 0.3760 - loss: 2.3349 - top3_acc: 0.6331 - top5_acc: 0.7517
+Epoch 33: val_accuracy improved from 0.38756 to 0.39380, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 269s 553ms/step - accuracy: 0.3760 - loss: 2.3349 - top3_acc: 0.6331 - top5_acc: 0.7517 - val_accuracy: 0.3938 - val_loss: 2.3247 - val_top3_acc: 0.6287 - val_top5_acc: 0.7421 - learning_rate: 1.8000e-05
+Epoch 34/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 508ms/step - accuracy: 0.3800 - loss: 2.3425 - top3_acc: 0.6301 - top5_acc: 0.7478
+Epoch 34: val_accuracy improved from 0.39380 to 0.39605, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 267s 549ms/step - accuracy: 0.3800 - loss: 2.3425 - top3_acc: 0.6301 - top5_acc: 0.7478 - val_accuracy: 0.3961 - val_loss: 2.3204 - val_top3_acc: 0.6337 - val_top5_acc: 0.7459 - learning_rate: 1.8000e-05
+Epoch 35/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 522ms/step - accuracy: 0.3913 - loss: 2.3160 - top3_acc: 0.6346 - top5_acc: 0.7518
+Epoch 35: val_accuracy did not improve from 0.39605
+487/487 ━━━━━━━━━━━━━━━━━━━━ 273s 560ms/step - accuracy: 0.3913 - loss: 2.3161 - top3_acc: 0.6346 - top5_acc: 0.7518 - val_accuracy: 0.3943 - val_loss: 2.3329 - val_top3_acc: 0.6314 - val_top5_acc: 0.7391 - learning_rate: 1.8000e-05
+Epoch 36/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 527ms/step - accuracy: 0.3832 - loss: 2.3406 - top3_acc: 0.6261 - top5_acc: 0.7475
+Epoch 36: val_accuracy improved from 0.39605 to 0.40005, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 276s 566ms/step - accuracy: 0.3832 - loss: 2.3406 - top3_acc: 0.6261 - top5_acc: 0.7475 - val_accuracy: 0.4000 - val_loss: 2.3150 - val_top3_acc: 0.6404 - val_top5_acc: 0.7499 - learning_rate: 1.8000e-05
+Epoch 37/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 492ms/step - accuracy: 0.3974 - loss: 2.3228 - top3_acc: 0.6351 - top5_acc: 0.7554
+Epoch 37: val_accuracy did not improve from 0.40005
+487/487 ━━━━━━━━━━━━━━━━━━━━ 258s 529ms/step - accuracy: 0.3974 - loss: 2.3228 - top3_acc: 0.6351 - top5_acc: 0.7554 - val_accuracy: 0.3911 - val_loss: 2.3646 - val_top3_acc: 0.6179 - val_top5_acc: 0.7344 - learning_rate: 1.8000e-05
+Epoch 38/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 503ms/step - accuracy: 0.4016 - loss: 2.2992 - top3_acc: 0.6429 - top5_acc: 0.7540
+Epoch 38: val_accuracy did not improve from 0.40005
+487/487 ━━━━━━━━━━━━━━━━━━━━ 263s 541ms/step - accuracy: 0.4016 - loss: 2.2992 - top3_acc: 0.6429 - top5_acc: 0.7540 - val_accuracy: 0.3983 - val_loss: 2.3294 - val_top3_acc: 0.6352 - val_top5_acc: 0.7411 - learning_rate: 1.8000e-05
+Epoch 39/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 515ms/step - accuracy: 0.4068 - loss: 2.2951 - top3_acc: 0.6536 - top5_acc: 0.7646
+Epoch 39: val_accuracy did not improve from 0.40005
+
+Epoch 39: ReduceLROnPlateau reducing learning rate to 5.399999645305797e-06.
+487/487 ━━━━━━━━━━━━━━━━━━━━ 269s 553ms/step - accuracy: 0.4068 - loss: 2.2952 - top3_acc: 0.6536 - top5_acc: 0.7646 - val_accuracy: 0.3923 - val_loss: 2.3508 - val_top3_acc: 0.6237 - val_top5_acc: 0.7344 - learning_rate: 1.8000e-05
+Epoch 40/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 508ms/step - accuracy: 0.3961 - loss: 2.3046 - top3_acc: 0.6376 - top5_acc: 0.7550
+Epoch 40: val_accuracy improved from 0.40005 to 0.40355, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 267s 548ms/step - accuracy: 0.3961 - loss: 2.3046 - top3_acc: 0.6376 - top5_acc: 0.7551 - val_accuracy: 0.4035 - val_loss: 2.3048 - val_top3_acc: 0.6442 - val_top5_acc: 0.7469 - learning_rate: 5.4000e-06
+Epoch 41/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 515ms/step - accuracy: 0.3993 - loss: 2.2840 - top3_acc: 0.6380 - top5_acc: 0.7580
+Epoch 41: val_accuracy improved from 0.40355 to 0.40680, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 270s 555ms/step - accuracy: 0.3993 - loss: 2.2840 - top3_acc: 0.6381 - top5_acc: 0.7580 - val_accuracy: 0.4068 - val_loss: 2.3028 - val_top3_acc: 0.6427 - val_top5_acc: 0.7476 - learning_rate: 5.4000e-06
+Epoch 42/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 499ms/step - accuracy: 0.3964 - loss: 2.3040 - top3_acc: 0.6503 - top5_acc: 0.7604
+Epoch 42: val_accuracy did not improve from 0.40680
+487/487 ━━━━━━━━━━━━━━━━━━━━ 261s 537ms/step - accuracy: 0.3964 - loss: 2.3040 - top3_acc: 0.6503 - top5_acc: 0.7604 - val_accuracy: 0.4068 - val_loss: 2.3025 - val_top3_acc: 0.6422 - val_top5_acc: 0.7481 - learning_rate: 5.4000e-06
+Epoch 43/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 517ms/step - accuracy: 0.3983 - loss: 2.2793 - top3_acc: 0.6556 - top5_acc: 0.7688
+Epoch 43: val_accuracy did not improve from 0.40680
+487/487 ━━━━━━━━━━━━━━━━━━━━ 274s 562ms/step - accuracy: 0.3983 - loss: 2.2793 - top3_acc: 0.6556 - top5_acc: 0.7687 - val_accuracy: 0.4003 - val_loss: 2.3105 - val_top3_acc: 0.6387 - val_top5_acc: 0.7464 - learning_rate: 5.4000e-06
+Epoch 44/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 515ms/step - accuracy: 0.4164 - loss: 2.2659 - top3_acc: 0.6538 - top5_acc: 0.7718
+Epoch 44: val_accuracy did not improve from 0.40680
+487/487 ━━━━━━━━━━━━━━━━━━━━ 272s 558ms/step - accuracy: 0.4163 - loss: 2.2659 - top3_acc: 0.6537 - top5_acc: 0.7718 - val_accuracy: 0.4048 - val_loss: 2.2994 - val_top3_acc: 0.6449 - val_top5_acc: 0.7504 - learning_rate: 5.4000e-06
+Epoch 45/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 500ms/step - accuracy: 0.4139 - loss: 2.2606 - top3_acc: 0.6514 - top5_acc: 0.7628
+Epoch 45: val_accuracy improved from 0.40680 to 0.40805, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 264s 543ms/step - accuracy: 0.4139 - loss: 2.2606 - top3_acc: 0.6514 - top5_acc: 0.7628 - val_accuracy: 0.4080 - val_loss: 2.3044 - val_top3_acc: 0.6442 - val_top5_acc: 0.7479 - learning_rate: 5.4000e-06
+Epoch 46/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 507ms/step - accuracy: 0.4035 - loss: 2.2741 - top3_acc: 0.6538 - top5_acc: 0.7673
+Epoch 46: val_accuracy did not improve from 0.40805
+487/487 ━━━━━━━━━━━━━━━━━━━━ 268s 551ms/step - accuracy: 0.4035 - loss: 2.2741 - top3_acc: 0.6537 - top5_acc: 0.7673 - val_accuracy: 0.4060 - val_loss: 2.3116 - val_top3_acc: 0.6432 - val_top5_acc: 0.7459 - learning_rate: 5.4000e-06
+Epoch 47/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 504ms/step - accuracy: 0.4080 - loss: 2.2817 - top3_acc: 0.6465 - top5_acc: 0.7662
+Epoch 47: val_accuracy improved from 0.40805 to 0.40955, saving model to antioverfit_results/models/best_model.keras
+
+Epoch 47: ReduceLROnPlateau reducing learning rate to 1.6199999208765803e-06.
+487/487 ━━━━━━━━━━━━━━━━━━━━ 269s 552ms/step - accuracy: 0.4080 - loss: 2.2817 - top3_acc: 0.6465 - top5_acc: 0.7662 - val_accuracy: 0.4095 - val_loss: 2.3018 - val_top3_acc: 0.6469 - val_top5_acc: 0.7459 - learning_rate: 5.4000e-06
+Epoch 48/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 524ms/step - accuracy: 0.4077 - loss: 2.2586 - top3_acc: 0.6533 - top5_acc: 0.7692
+Epoch 48: val_accuracy improved from 0.40955 to 0.41004, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 275s 565ms/step - accuracy: 0.4077 - loss: 2.2586 - top3_acc: 0.6533 - top5_acc: 0.7692 - val_accuracy: 0.4100 - val_loss: 2.2963 - val_top3_acc: 0.6482 - val_top5_acc: 0.7511 - learning_rate: 1.6200e-06
+Epoch 49/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 523ms/step - accuracy: 0.4106 - loss: 2.2811 - top3_acc: 0.6529 - top5_acc: 0.7623
+Epoch 49: val_accuracy did not improve from 0.41004
+487/487 ━━━━━━━━━━━━━━━━━━━━ 273s 561ms/step - accuracy: 0.4106 - loss: 2.2811 - top3_acc: 0.6529 - top5_acc: 0.7623 - val_accuracy: 0.4093 - val_loss: 2.2988 - val_top3_acc: 0.6452 - val_top5_acc: 0.7491 - learning_rate: 1.6200e-06
+Epoch 50/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 525ms/step - accuracy: 0.4092 - loss: 2.2657 - top3_acc: 0.6500 - top5_acc: 0.7696
+Epoch 50: val_accuracy improved from 0.41004 to 0.41279, saving model to antioverfit_results/models/best_model.keras
+487/487 ━━━━━━━━━━━━━━━━━━━━ 275s 565ms/step - accuracy: 0.4092 - loss: 2.2657 - top3_acc: 0.6500 - top5_acc: 0.7696 - val_accuracy: 0.4128 - val_loss: 2.3023 - val_top3_acc: 0.6459 - val_top5_acc: 0.7509 - learning_rate: 1.6200e-06
+Epoch 51/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 524ms/step - accuracy: 0.4159 - loss: 2.2530 - top3_acc: 0.6567 - top5_acc: 0.7711
+Epoch 51: val_accuracy did not improve from 0.41279
+
+Epoch 51: ReduceLROnPlateau reducing learning rate to 4.859999762629741e-07.
+487/487 ━━━━━━━━━━━━━━━━━━━━ 274s 563ms/step - accuracy: 0.4159 - loss: 2.2530 - top3_acc: 0.6567 - top5_acc: 0.7711 - val_accuracy: 0.4103 - val_loss: 2.2974 - val_top3_acc: 0.6474 - val_top5_acc: 0.7516 - learning_rate: 1.6200e-06
+Epoch 52/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 525ms/step - accuracy: 0.4134 - loss: 2.2494 - top3_acc: 0.6590 - top5_acc: 0.7668
+Epoch 52: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 276s 567ms/step - accuracy: 0.4134 - loss: 2.2495 - top3_acc: 0.6590 - top5_acc: 0.7668 - val_accuracy: 0.4100 - val_loss: 2.2977 - val_top3_acc: 0.6464 - val_top5_acc: 0.7499 - learning_rate: 4.8600e-07
+Epoch 53/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 526ms/step - accuracy: 0.4008 - loss: 2.2874 - top3_acc: 0.6465 - top5_acc: 0.7610
+Epoch 53: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 278s 571ms/step - accuracy: 0.4008 - loss: 2.2874 - top3_acc: 0.6465 - top5_acc: 0.7610 - val_accuracy: 0.4123 - val_loss: 2.3002 - val_top3_acc: 0.6467 - val_top5_acc: 0.7486 - learning_rate: 4.8600e-07
+Epoch 54/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 521ms/step - accuracy: 0.4159 - loss: 2.2740 - top3_acc: 0.6551 - top5_acc: 0.7669
+Epoch 54: val_accuracy did not improve from 0.41279
+
+Epoch 54: ReduceLROnPlateau reducing learning rate to 1.4579999287889223e-07.
+487/487 ━━━━━━━━━━━━━━━━━━━━ 274s 562ms/step - accuracy: 0.4158 - loss: 2.2740 - top3_acc: 0.6551 - top5_acc: 0.7669 - val_accuracy: 0.4085 - val_loss: 2.2989 - val_top3_acc: 0.6444 - val_top5_acc: 0.7489 - learning_rate: 4.8600e-07
+Epoch 55/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 522ms/step - accuracy: 0.4066 - loss: 2.2689 - top3_acc: 0.6554 - top5_acc: 0.7716
+Epoch 55: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 276s 567ms/step - accuracy: 0.4066 - loss: 2.2689 - top3_acc: 0.6554 - top5_acc: 0.7716 - val_accuracy: 0.4093 - val_loss: 2.2980 - val_top3_acc: 0.6494 - val_top5_acc: 0.7471 - learning_rate: 1.4580e-07
+Epoch 56/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 536ms/step - accuracy: 0.4005 - loss: 2.2848 - top3_acc: 0.6453 - top5_acc: 0.7658
+Epoch 56: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 285s 586ms/step - accuracy: 0.4005 - loss: 2.2848 - top3_acc: 0.6454 - top5_acc: 0.7658 - val_accuracy: 0.4083 - val_loss: 2.3032 - val_top3_acc: 0.6452 - val_top5_acc: 0.7491 - learning_rate: 1.4580e-07
+Epoch 57/70
+486/487 ━━━━━━━━━━━━━━━━━━━━ 0s 526ms/step - accuracy: 0.4111 - loss: 2.2673 - top3_acc: 0.6640 - top5_acc: 0.7721
+Epoch 57: val_accuracy did not improve from 0.41279
+
+Epoch 57: ReduceLROnPlateau reducing learning rate to 1e-07.
+487/487 ━━━━━━━━━━━━━━━━━━━━ 275s 564ms/step - accuracy: 0.4111 - loss: 2.2673 - top3_acc: 0.6640 - top5_acc: 0.7721 - val_accuracy: 0.4103 - val_loss: 2.2976 - val_top3_acc: 0.6479 - val_top5_acc: 0.7484 - learning_rate: 1.4580e-07
+Epoch 58/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 522ms/step - accuracy: 0.4041 - loss: 2.2580 - top3_acc: 0.6576 - top5_acc: 0.7709
+Epoch 58: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 276s 567ms/step - accuracy: 0.4041 - loss: 2.2580 - top3_acc: 0.6576 - top5_acc: 0.7709 - val_accuracy: 0.4120 - val_loss: 2.3005 - val_top3_acc: 0.6467 - val_top5_acc: 0.7494 - learning_rate: 1.0000e-07
+Epoch 59/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 525ms/step - accuracy: 0.3991 - loss: 2.2895 - top3_acc: 0.6492 - top5_acc: 0.7681
+Epoch 59: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 276s 566ms/step - accuracy: 0.3991 - loss: 2.2894 - top3_acc: 0.6492 - top5_acc: 0.7681 - val_accuracy: 0.4095 - val_loss: 2.2953 - val_top3_acc: 0.6484 - val_top5_acc: 0.7499 - learning_rate: 1.0000e-07
+Epoch 60/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 521ms/step - accuracy: 0.4023 - loss: 2.2703 - top3_acc: 0.6501 - top5_acc: 0.7696
+Epoch 60: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 272s 558ms/step - accuracy: 0.4023 - loss: 2.2703 - top3_acc: 0.6501 - top5_acc: 0.7696 - val_accuracy: 0.4120 - val_loss: 2.2969 - val_top3_acc: 0.6457 - val_top5_acc: 0.7511 - learning_rate: 1.0000e-07
+Epoch 61/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 505ms/step - accuracy: 0.4117 - loss: 2.2527 - top3_acc: 0.6535 - top5_acc: 0.7641
+Epoch 61: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 265s 544ms/step - accuracy: 0.4117 - loss: 2.2527 - top3_acc: 0.6535 - top5_acc: 0.7641 - val_accuracy: 0.4088 - val_loss: 2.2983 - val_top3_acc: 0.6449 - val_top5_acc: 0.7499 - learning_rate: 1.0000e-07
+Epoch 62/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 494ms/step - accuracy: 0.4124 - loss: 2.2655 - top3_acc: 0.6537 - top5_acc: 0.7695
+Epoch 62: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 259s 531ms/step - accuracy: 0.4124 - loss: 2.2655 - top3_acc: 0.6537 - top5_acc: 0.7695 - val_accuracy: 0.4110 - val_loss: 2.2969 - val_top3_acc: 0.6474 - val_top5_acc: 0.7504 - learning_rate: 1.0000e-07
+Epoch 63/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 496ms/step - accuracy: 0.3914 - loss: 2.2756 - top3_acc: 0.6530 - top5_acc: 0.7620
+Epoch 63: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 260s 535ms/step - accuracy: 0.3914 - loss: 2.2756 - top3_acc: 0.6531 - top5_acc: 0.7620 - val_accuracy: 0.4113 - val_loss: 2.2982 - val_top3_acc: 0.6467 - val_top5_acc: 0.7496 - learning_rate: 1.0000e-07
+Epoch 64/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 491ms/step - accuracy: 0.4136 - loss: 2.2415 - top3_acc: 0.6607 - top5_acc: 0.7711
+Epoch 64: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 259s 531ms/step - accuracy: 0.4136 - loss: 2.2415 - top3_acc: 0.6606 - top5_acc: 0.7711 - val_accuracy: 0.4108 - val_loss: 2.2980 - val_top3_acc: 0.6472 - val_top5_acc: 0.7484 - learning_rate: 1.0000e-07
+Epoch 65/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 484ms/step - accuracy: 0.4110 - loss: 2.2564 - top3_acc: 0.6560 - top5_acc: 0.7738
+Epoch 65: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 253s 519ms/step - accuracy: 0.4110 - loss: 2.2564 - top3_acc: 0.6560 - top5_acc: 0.7738 - val_accuracy: 0.4083 - val_loss: 2.2978 - val_top3_acc: 0.6452 - val_top5_acc: 0.7491 - learning_rate: 1.0000e-07
+Epoch 66/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 489ms/step - accuracy: 0.4073 - loss: 2.2478 - top3_acc: 0.6498 - top5_acc: 0.7724
+Epoch 66: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 257s 528ms/step - accuracy: 0.4073 - loss: 2.2478 - top3_acc: 0.6498 - top5_acc: 0.7724 - val_accuracy: 0.4113 - val_loss: 2.2982 - val_top3_acc: 0.6479 - val_top5_acc: 0.7499 - learning_rate: 1.0000e-07
+Epoch 67/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 491ms/step - accuracy: 0.4064 - loss: 2.2684 - top3_acc: 0.6477 - top5_acc: 0.7614
+Epoch 67: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 258s 529ms/step - accuracy: 0.4064 - loss: 2.2684 - top3_acc: 0.6477 - top5_acc: 0.7614 - val_accuracy: 0.4113 - val_loss: 2.2994 - val_top3_acc: 0.6499 - val_top5_acc: 0.7494 - learning_rate: 1.0000e-07
+Epoch 68/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 502ms/step - accuracy: 0.4091 - loss: 2.2692 - top3_acc: 0.6554 - top5_acc: 0.7680
+Epoch 68: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 263s 541ms/step - accuracy: 0.4091 - loss: 2.2692 - top3_acc: 0.6554 - top5_acc: 0.7680 - val_accuracy: 0.4105 - val_loss: 2.2977 - val_top3_acc: 0.6469 - val_top5_acc: 0.7501 - learning_rate: 1.0000e-07
+Epoch 69/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 514ms/step - accuracy: 0.4067 - loss: 2.2688 - top3_acc: 0.6506 - top5_acc: 0.7653
+Epoch 69: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 269s 552ms/step - accuracy: 0.4067 - loss: 2.2688 - top3_acc: 0.6506 - top5_acc: 0.7653 - val_accuracy: 0.4103 - val_loss: 2.2994 - val_top3_acc: 0.6472 - val_top5_acc: 0.7509 - learning_rate: 1.0000e-07
+Epoch 70/70
+487/487 ━━━━━━━━━━━━━━━━━━━━ 0s 511ms/step - accuracy: 0.4074 - loss: 2.2672 - top3_acc: 0.6577 - top5_acc: 0.7766
+Epoch 70: val_accuracy did not improve from 0.41279
+487/487 ━━━━━━━━━━━━━━━━━━━━ 268s 550ms/step - accuracy: 0.4074 - loss: 2.2671 - top3_acc: 0.6577 - top5_acc: 0.7766 - val_accuracy: 0.4095 - val_loss: 2.2965 - val_top3_acc: 0.6447 - val_top5_acc: 0.7509 - learning_rate: 1.0000e-07
+Restoring model weights from the end of the best epoch: 59.
+
+✓ Training completed!
+
+================================================================================
+EVALUATION
+================================================================================
+126/126 ━━━━━━━━━━━━━━━━━━━━ 19s 149ms/step - accuracy: 0.4806 - loss: 2.1463 - top3_acc: 0.6894 - top5_acc: 0.7826
+
+--------------------------------------------------------------------------------
+TEST RESULTS
+--------------------------------------------------------------------------------
+loss                : 2.2953
+compile_metrics     : 0.4095 (40.95%)
+--------------------------------------------------------------------------------
+126/126 ━━━━━━━━━━━━━━━━━━━━ 32s 203ms/step
+
+--------------------------------------------------------------------------------
+CLASSIFICATION REPORT
+--------------------------------------------------------------------------------
+                                                                    precision    recall  f1-score   support
+
+                                           Acne and Rosacea Photos     0.5358    0.6955    0.6053       312
+Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions     0.5000    0.4861    0.4930       288
+                                          Atopic Dermatitis Photos     0.3241    0.3821    0.3507       123
+                                            Bullous Disease Photos     0.1770    0.3274    0.2298       113
+                Cellulitis Impetigo and other Bacterial Infections     0.2286    0.1096    0.1481        73
+                                                     Eczema Photos     0.4175    0.4175    0.4175       309
+                                      Exanthems and Drug Eruptions     0.2371    0.4554    0.3119       101
+                 Hair Loss Photos Alopecia and other Hair Diseases     0.3520    0.7333    0.4757        60
+                                  Herpes HPV and other STDs Photos     0.2265    0.4020    0.2898       102
+                      Light Diseases and Disorders of Pigmentation     0.2429    0.1189    0.1596       143
+                        Lupus and other Connective Tissue diseases     0.2073    0.1619    0.1818       105
+                               Melanoma Skin Cancer Nevi and Moles     0.6022    0.4828    0.5359       116
+                                Nail Fungus and other Nail Disease     0.7795    0.7586    0.7689       261
+                    Poison Ivy Photos and other Contact Dermatitis     0.2321    0.2000    0.2149        65
+             Psoriasis pictures Lichen Planus and related diseases     0.4465    0.2017    0.2779       352
+             Scabies Lyme Disease and other Infestations and Bites     0.3564    0.3333    0.3445       108
+                      Seborrheic Keratoses and other Benign Tumors     0.5283    0.4082    0.4605       343
+                                                  Systemic Disease     0.3659    0.2961    0.3273       152
+            Tinea Ringworm Candidiasis and other Fungal Infections     0.4807    0.3446    0.4014       325
+                                                   Urticaria Hives     0.2233    0.4340    0.2949        53
+                                                   Vascular Tumors     0.3067    0.3802    0.3395       121
+                                                 Vasculitis Photos     0.2687    0.4095    0.3245       105
+                        Warts Molluscum and other Viral Infections     0.4185    0.4154    0.4170       272
+
+                                                          accuracy                         0.4095      4002
+                                                         macro avg     0.3677    0.3893    0.3639      4002
+                                                      weighted avg     0.4272    0.4095    0.4062      4002
+
+
+================================================================================
+GENERATING VISUALIZATIONS
+================================================================================
+✓ Training plots saved
+✓ Confusion matrix saved
+
+================================================================================
+FINAL RESULTS
+================================================================================
+
+✓ Test Accuracy: 0.4095 (40.95%)
+
+================================================================================
+OVERFITTING ANALYSIS
+================================================================================
+Training Accuracy:   0.4076 (40.76%)
+Validation Accuracy: 0.4095 (40.95%)
+Overfitting Gap:     -0.0019 (-0.19%)
+
+✅ EXCELLENT! Minimal overfitting
+
+✓ Results: antioverfit_results/
