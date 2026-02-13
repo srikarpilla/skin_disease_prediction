@@ -1,0 +1,29 @@
+                                                                    precision    recall  f1-score   support
+
+                                           Acne and Rosacea Photos     0.5358    0.6955    0.6053       312
+Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions     0.5000    0.4861    0.4930       288
+                                          Atopic Dermatitis Photos     0.3241    0.3821    0.3507       123
+                                            Bullous Disease Photos     0.1770    0.3274    0.2298       113
+                Cellulitis Impetigo and other Bacterial Infections     0.2286    0.1096    0.1481        73
+                                                     Eczema Photos     0.4175    0.4175    0.4175       309
+                                      Exanthems and Drug Eruptions     0.2371    0.4554    0.3119       101
+                 Hair Loss Photos Alopecia and other Hair Diseases     0.3520    0.7333    0.4757        60
+                                  Herpes HPV and other STDs Photos     0.2265    0.4020    0.2898       102
+                      Light Diseases and Disorders of Pigmentation     0.2429    0.1189    0.1596       143
+                        Lupus and other Connective Tissue diseases     0.2073    0.1619    0.1818       105
+                               Melanoma Skin Cancer Nevi and Moles     0.6022    0.4828    0.5359       116
+                                Nail Fungus and other Nail Disease     0.7795    0.7586    0.7689       261
+                    Poison Ivy Photos and other Contact Dermatitis     0.2321    0.2000    0.2149        65
+             Psoriasis pictures Lichen Planus and related diseases     0.4465    0.2017    0.2779       352
+             Scabies Lyme Disease and other Infestations and Bites     0.3564    0.3333    0.3445       108
+                      Seborrheic Keratoses and other Benign Tumors     0.5283    0.4082    0.4605       343
+                                                  Systemic Disease     0.3659    0.2961    0.3273       152
+            Tinea Ringworm Candidiasis and other Fungal Infections     0.4807    0.3446    0.4014       325
+                                                   Urticaria Hives     0.2233    0.4340    0.2949        53
+                                                   Vascular Tumors     0.3067    0.3802    0.3395       121
+                                                 Vasculitis Photos     0.2687    0.4095    0.3245       105
+                        Warts Molluscum and other Viral Infections     0.4185    0.4154    0.4170       272
+
+                                                          accuracy                         0.4095      4002
+                                                         macro avg     0.3677    0.3893    0.3639      4002
+                                                      weighted avg     0.4272    0.4095    0.4062      4002
