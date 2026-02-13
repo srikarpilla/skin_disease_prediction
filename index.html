@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DermAI | AI Skin Disease Detection</title>
+
+<style>
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  color: #1f2933;
+  background: #ffffff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1aa39a;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #1aa39a;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: linear-gradient(to right, #f4fbfa, #ffffff);
+  padding: 80px 60px 100px;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #1aa39a;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #6b7280;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #1aa39a;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-btn:hover {
+  background: #148f86;
+}
+
+/* ================= FEATURES ================= */
+.features {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  width: 220px;
+}
+
+.feature-card h4 {
+  margin: 10px 0 6px;
+}
+
+/* ================= ANALYZE ================= */
+.analyze {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.analyze h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.analyze p {
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* ================= UPLOAD BOX ================= */
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 18px;
+  padding: 55px;
+  max-width: 520px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: #f8fafc;
+}
+
+.upload-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.upload-box span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ================= RESULT ================= */
+.result {
+  margin-top: 40px;
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 14px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.result h3 {
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #f8fafc;
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="logo">🩺 DermAI</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#analyze">Analyze</a></li>
+    <li><a href="about.html">About Model</a></li>
+    <li><a href="disease.html">About Disease</a></li>
+  </ul>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>AI-Powered <span>Skin Disease</span><br>Detection</h1>
+    <p>
+      Upload a skin image and receive instant AI analysis identifying
+      up to 15 dermatological conditions with confidence scoring.
+      Fast, private, and accessible.
+    </p>
+
+    <a href="#analyze" class="cta-btn">Upload & Analyze</a>
+
+    <div class="features">
+      <div class="feature-card">
+        🔒
+        <h4>Private & Secure</h4>
+        <p>Images processed locally</p>
+      </div>
+      <div class="feature-card">
+        🧠
+        <h4>CNN Model</h4>
+        <p>Deep learning analysis</p>
+      </div>
+      <div class="feature-card">
+        🧬
+        <h4>15 Conditions</h4>
+        <p>Comprehensive detection</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANALYZE ================= -->
+<section id="analyze" class="analyze">
+  <h2>Analyze Your Image</h2>
+  <p>
+    Upload a clear photo of the skin area you'd like analyzed.
+    Our CNN model will process the image and provide a prediction.
+  </p>
+
+  <div class="upload-box" onclick="fileInput.click()">
+    <div class="upload-icon">⬆️</div>
+    <p><strong>Drop your skin image here</strong></p>
+    <span>or click to browse — PNG, JPG, WEBP accepted</span>
+    <input type="file" id="fileInput" hidden>
+  </div>
+
+  <div class="result" id="result">
+    <h3>Prediction Result</h3>
+    <p><strong>Disease:</strong> <span id="disease"></span></p>
+    <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+    <p class="disclaimer">
+      ⚠️ This result is generated by an AI model and is not a medical diagnosis.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 DermAI | AI Skin Disease Detection</p>
+</footer>
+<script>
+const fileInput = document.getElementById("fileInput");
+const resultBox = document.getElementById("result");
+const diseaseText = document.getElementById("disease");
+const confidenceText = document.getElementById("confidence");
+
+fileInput.addEventListener("change", async () => {
+  if (!fileInput.files.length) return;
+
+  const formData = new FormData();
+  formData.append("file", fileInput.files[0]);
+
+  diseaseText.innerText = "Analyzing...";
+  confidenceText.innerText = "";
+  resultBox.style.display = "block";
+
+  try {
+    const response = await fetch("http://127.0.0.1:5000/predict", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.error) throw new Error(data.error);
+
+    diseaseText.innerText = data.disease;
+    confidenceText.innerText = data.confidence + "%";
+
+  } catch (err) {
+    diseaseText.innerText = "❌ Prediction failed";
+    confidenceText.innerText = "";
+    console.error(err);
+  }
+});
+</script>
+
+
+</body>
+</html>
