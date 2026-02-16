@@ -1,0 +1,12 @@
+# Core web framework
+Flask==3.0.3
+
+# Deep Learning & Model Loading
+tensorflow-cpu==2.17.0         
+numpy==1.26.4                  
+
+# Image processing
+Pillow==10.4.0                  # PIL fork for image loading/resizing
+
+# Optional but useful (for debugging or future extensions)
+gunicorn==22.0.0                # Recommended production server (used on Render/Railway)
