@@ -31,8 +31,12 @@ WEIGHTS_URL = "https://drive.google.com/uc?export=download&id=1f-YTOd67Nw60KEa2I
 ARCH_URL = "https://drive.google.com/uc?export=download&id=1OONpxsXcVyT5caPFmjy_bSzYTJaMRp3w"
 
 # Email Configuration (use environment variables in production/Render!)
-EMAIL_SENDER = os.environ.get('EMAIL_SENDER', 'angrajkarn2004@gmail.com')
-EMAIL_APP_PASSWORD = os.environ.get('EMAIL_APP_PASSWORD', 'wpjh gfuv ipma ibyi')  # Use App Password only!
+EMAIL_SENDER = os.environ.get('EMAIL_SENDER')
+EMAIL_APP_PASSWORD = os.environ.get('EMAIL_APP_PASSWORD')
+
+if not EMAIL_SENDER or not EMAIL_APP_PASSWORD:
+    raise ValueError("Missing EMAIL_SENDER or EMAIL_APP_PASSWORD in .env file")
+
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
@@ -190,4 +194,5 @@ if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Render uses env PORT
     print(f"\nDermAI server starting on port {port}")
     app.run(host='0.0.0.0', port=port, debug=False)
+
 
