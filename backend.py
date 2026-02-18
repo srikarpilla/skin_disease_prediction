@@ -27,8 +27,8 @@ SYMPTOMS_PATH = "symptoms.json"
 IMG_SIZE = (224, 224)
 
 # Google Drive direct download links (replace YOUR_FILE_ID with real IDs)
-WEIGHTS_URL = "https://drive.google.com/uc?export=download&id=YOUR_WEIGHTS_FILE_ID_HERE"
-ARCH_URL = "https://drive.google.com/uc?export=download&id=YOUR_ARCH_FILE_ID_HERE"
+WEIGHTS_URL = "https://drive.google.com/uc?export=download&id=1f-YTOd67Nw60KEa2IeLXAmpXGGfs7R8O"
+ARCH_URL = "https://drive.google.com/uc?export=download&id=1OONpxsXcVyT5caPFmjy_bSzYTJaMRp3w"
 
 # Email Configuration (use environment variables in production/Render!)
 EMAIL_SENDER = os.environ.get('EMAIL_SENDER', 'angrajkarn2004@gmail.com')
@@ -190,3 +190,4 @@ if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Render uses env PORT
     print(f"\nDermAI server starting on port {port}")
     app.run(host='0.0.0.0', port=port, debug=False)
+
