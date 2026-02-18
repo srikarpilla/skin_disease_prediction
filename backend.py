@@ -11,6 +11,20 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
+import requests
+import os
+
+def download_file(url, local_path):
+    if not os.path.exists(local_path):
+        print(f"Downloading {local_path}...")
+        r = requests.get(url, allow_redirects=True)
+        open(local_path, 'wb').write(r.content)
+        print("Downloaded!")
+
+# Download model files if missing
+download_file("https://drive.google.com/uc?export=download&id=1f-YTOd67Nw60KEa2IeLXAmpXGGfs7R8O", WEIGHTS_PATH)
+download_file("https://drive.google.com/uc?export=download&id=1OONpxsXcVyT5caPFmjy_bSzYTJaMRp3w", ARCH_PATH)
+
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 
