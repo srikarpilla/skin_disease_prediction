@@ -1,4 +1,7 @@
-# backend.py - DermAI Backend with Formal Email Prescription Report
+# backend.py - DermAI Backend (Fixed & Render-ready)
+# Run locally: python backend.py
+# Deployed on Render: auto-downloads model files from Google Drive
+
 from flask import Flask, request, jsonify, send_from_directory
 import tensorflow as tf
 import numpy as np
@@ -7,57 +10,70 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 import io
 import os
+import requests
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
-import requests
-import os
-
-def download_file(url, local_path):
-    if not os.path.exists(local_path):
-        print(f"Downloading {local_path}...")
-        r = requests.get(url, allow_redirects=True)
-        open(local_path, 'wb').write(r.content)
-        print("Downloaded!")
-
-# Download model files if missing
-download_file("https://drive.google.com/uc?export=download&id=1f-YTOd67Nw60KEa2IeLXAmpXGGfs7R8O", WEIGHTS_PATH)
-download_file("https://drive.google.com/uc?export=download&id=1OONpxsXcVyT5caPFmjy_bSzYTJaMRp3w", ARCH_PATH)
-
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 
 # ----------------------------- CONFIGURATION -----------------------------
-WEIGHTS_PATH = r"C:\Users\Srikar\Downloads\skin_disease_prediction-main\best_weights.weights.h5"
-ARCH_PATH = r"C:\Users\Srikar\Downloads\skin_disease_prediction-main\model_architecture.json"
-CLASS_NAMES_PATH = r"C:\Users\Srikar\Downloads\skin_disease_prediction-main\class_names.json"
-SYMPTOMS_PATH = r"C:\Users\Srikar\Downloads\skin_disease_prediction-main\symptoms.json"
+# Paths (relative — files will be downloaded to current directory on Render)
+WEIGHTS_PATH = "best_weights.weights.h5"
+ARCH_PATH = "model_architecture.json"
+CLASS_NAMES_PATH = "class_names.json"
+SYMPTOMS_PATH = "symptoms.json"
 IMG_SIZE = (224, 224)
-IMG_SIZE = (224, 224)
-PORT = 5000
 
-# Email Configuration - CHANGE THESE
-EMAIL_SENDER = 'angrajkarn2004@gmail.com'          # Your Gmail
-EMAIL_APP_PASSWORD = 'wpjh gfuv ipma ibyi'  # Gmail App Password
+# Google Drive direct download links (replace YOUR_FILE_ID with real IDs)
+WEIGHTS_URL = "https://drive.google.com/uc?export=download&id=YOUR_WEIGHTS_FILE_ID_HERE"
+ARCH_URL = "https://drive.google.com/uc?export=download&id=YOUR_ARCH_FILE_ID_HERE"
+
+# Email Configuration (use environment variables in production/Render!)
+EMAIL_SENDER = os.environ.get('EMAIL_SENDER', 'angrajkarn2004@gmail.com')
+EMAIL_APP_PASSWORD = os.environ.get('EMAIL_APP_PASSWORD', 'wpjh gfuv ipma ibyi')  # Use App Password only!
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
-# Load model & data (same as before)
-print("Loading model...")
+# ----------------------------- AUTO-DOWNLOAD MODEL FILES -----------------------------
+def download_file(url, local_path):
+    if not os.path.exists(local_path):
+        print(f"Downloading {local_path} from {url}...")
+        try:
+            r = requests.get(url, allow_redirects=True, timeout=60)
+            r.raise_for_status()
+            with open(local_path, 'wb') as f:
+                f.write(r.content)
+            print(f"Downloaded: {local_path}")
+        except Exception as e:
+            print(f"Download failed for {local_path}: {e}")
+            raise RuntimeError(f"Failed to download model file: {local_path}")
+
+# Download files before loading model
+print("Checking and downloading model files if missing...")
+download_file(WEIGHTS_URL, WEIGHTS_PATH)
+download_file(ARCH_URL, ARCH_PATH)
+
+# ----------------------------- LOAD MODEL & DATA -----------------------------
+print("Loading model architecture...")
 with open(ARCH_PATH, 'r') as f:
     model_json = f.read()
 model = tf.keras.models.model_from_json(model_json)
+
+print("Loading weights...")
 model.load_weights(WEIGHTS_PATH)
 
+print("Loading class names and symptoms...")
 with open(CLASS_NAMES_PATH, 'r') as f:
     class_names = json.load(f)
 
 with open(SYMPTOMS_PATH, 'r') as f:
     DISEASE_SYMPTOMS = json.load(f)
 
-print(f"Ready – {len(class_names)} conditions loaded.")
+print(f"Model ready! {len(class_names)} conditions loaded.")
 
+# ----------------------------- HELPER FUNCTIONS -----------------------------
 def preprocess_image(img_bytes):
     img = Image.open(io.BytesIO(img_bytes))
     img = img.convert('RGB')
@@ -70,11 +86,11 @@ def preprocess_image(img_bytes):
 def send_prescription_email(user_info, disease, confidence, match_score, matching, missing, img_bytes):
     msg = MIMEMultipart()
     msg['From'] = f"DermAI Analyzer <{EMAIL_SENDER}>"
-    msg['To'] = user_info['email']
+    msg['To'] = user_info.get('email', EMAIL_SENDER)
     msg['Subject'] = "Your Skin Condition Analysis Report"
 
     body = f"""
-Dear {user_info['name']},
+Dear {user_info.get('name', 'User')},
 
 Thank you for using DermAI Skin Condition Analyzer.
 
@@ -83,9 +99,9 @@ Predicted Condition      : {disease}
 Confidence Level         : {confidence}%
 
 Symptom Alignment        : {match_score}
-Symptoms You Reported    : {', '.join(user_info['symptoms'].split(',')) if user_info['symptoms'] else 'None provided'}
-Matching Symptoms        : {', '.join(matching) if matching else 'None'}
-Additional Notes         : {', '.join(missing) if missing else 'All typical symptoms reported'}
+Symptoms You Reported    : {', '.join(user_info.get('symptoms', [])) or 'None provided'}
+Matching Symptoms        : {', '.join(matching) or 'None'}
+Additional Notes         : {', '.join(missing) or 'All typical symptoms reported'}
 
 General Care Suggestions (for informational purposes):
 • Keep the affected area clean and dry.
@@ -94,9 +110,6 @@ General Care Suggestions (for informational purposes):
 • Protect skin from sun exposure.
 
 This report is generated for informational purposes only based on the image and symptoms provided.
-It is not a substitute for professional medical evaluation.
-
-Please consult a qualified dermatologist or healthcare provider for a proper diagnosis and treatment plan.
 
 Best regards,  
 DermAI Support Team
@@ -115,10 +128,11 @@ DermAI Support Team
         server.login(EMAIL_SENDER, EMAIL_APP_PASSWORD)
         server.send_message(msg)
         server.quit()
-        print(f"Prescription email sent to {user_info['email']}")
+        print(f"Email sent successfully to {user_info.get('email')}")
     except Exception as e:
-        print(f"Email failed: {e}")
+        print(f"Email sending failed: {e}")
 
+# ----------------------------- ROUTES -----------------------------
 @app.route('/')
 def serve_index():
     return send_from_directory('.', 'index.html')
@@ -156,7 +170,7 @@ def predict():
         missing = [k for k in known if not any(k.lower() == u.lower() for u in user_symptoms)]
         match_score = f"{len(matching)} of {len(known)} typical symptoms match" if known else "No symptom data"
 
-        # Send email
+        # Send email to the USER'S email
         send_prescription_email(user_info, disease, confidence, match_score, matching, missing, img_bytes)
 
         return jsonify({
@@ -171,6 +185,8 @@ def predict():
         print("Error:", e)
         return jsonify({"error": "Analysis failed"}), 500
 
+# ----------------------------- RUN SERVER -----------------------------
 if __name__ == '__main__':
-    print("\nDermAI server running at http://127.0.0.1:5000\n")
-    app.run(host='127.0.0.1', port=PORT, debug=False)
+    port = int(os.environ.get("PORT", 5000))  # Render uses env PORT
+    print(f"\nDermAI server starting on port {port}")
+    app.run(host='0.0.0.0', port=port, debug=False)
